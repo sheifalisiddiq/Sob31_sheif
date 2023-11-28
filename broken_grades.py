@@ -21,26 +21,26 @@
 
 exam_one = int(input("Input exam grade one: "))
 
-exam_two = input("Input exam grade two: "))
+exam_two = int(input("Input exam grade two: "))#added int 
 
-exam_3 = str(input("Input exam grade three: "))
+exam_three = int(input("Input exam grade three: "))#changed 3 to three and changed str to int
 
-grades = [exam_one exam_two exam_three]
+grades = [exam_one,exam_two,exam_three]#added commas 
 sum = 0
-for grade in grade:
+for grade in grades:#changed grade to grades
   sum = sum + grade
 
-avg = sum / len(grdes)
+avg = sum / len(grades)#corrected grdes to grades 
 
 if avg >= 90:
     letter_grade = "A"
-elif avg >= 80 and avg < 90
+elif avg >= 80 and avg < 90:#added semicolon
     letter_grade = "B"
-elif avg > 69 and avg < 80:
-    letter_grade = "C'
-elif avg <= 69 and avg >= 65:
+elif avg >=70 and avg < 80:#corrected the condition of 69 to 70
+    letter_grade = "C"
+elif avg >= 65 and avg < 70:# corrected the condition of 69 to 65 and 65 to 70 and also corrected the conditions 
     letter_grade = "D"
-elif:
+else: #changed elif to else 
     letter_grade = "F"
 
 for grade in grades:
@@ -50,7 +50,7 @@ for grade in grades:
 
     print("Grade: " + letter_grade)
 
-if letter-grade is "F":
-    print "Student is failing."
+if letter_grade == "F":#converted is to == and changed - to _
+    print("Student is failing.")#added the str into a brackets
 else:
-    print "Student is passing."
+    print("Student is passing.")#added the str into a bracket 
